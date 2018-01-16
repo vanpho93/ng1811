@@ -1,0 +1,11 @@
+<h1 *ngIf="isAdmin">Bang dieu khien</h1>
+<h1 *ngIf="!isAdmin">Ban phai la admin</h1>
+<h3>{{ title }}</h3>
+<input type="text" [disabled]="isDisabled" />
+<button (click)="toggle()">Toggle</button>
+<br>
+<img src="{{ imageSrc }}" alt="">
+<br>
+<img [src]="imageSrc" alt="">
+<input type="text" [(ngModel)]="name">
+<h3>Name: {{ name }}</h3>
