@@ -10,7 +10,7 @@ export class WordComponent {
     title = 'Hello Khoa Pham.';
     name = '';
     imageSrc = 'https://www.google.com.vn/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png';
-    isAdmin = false;
+    isAdmin = true;
     toggle() {
         this.isDisabled = !this.isDisabled;
     }

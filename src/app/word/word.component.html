@@ -1,5 +1,10 @@
-<h1 *ngIf="isAdmin">Bang dieu khien</h1>
-<h1 *ngIf="!isAdmin">Ban phai la admin</h1>
+<div *ngIf="isAdmin">
+    <h1>Bang dieu khien</h1>
+    <button>Dieu khien</button>
+</div>
+<div *ngIf="!isAdmin">
+    <h1>Ban phai la admin</h1>
+</div>
 <h3>{{ title }}</h3>
 <input type="text" [disabled]="isDisabled" />
 <button (click)="toggle()">Toggle</button>
